@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahotsav 2026 - Utsav of Art</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assects/mahotsav_logo-removebg-preview.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <div class = "logo-img">
+                    <img src="./assets/mahotsav_logo-removebg-preview.png" alt="YourFest Logo" width="60">
+                </div>
+                <!-- <span>Mahotsav'26</span> -->
+            </div>
+            <div class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#proshows">Proshows</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar">
+                <ul class="social-links">
+                    <li><a href="#"><img src="./assets/insta.png" alt="insta" srcset="" width = "35px"></a></li>
+                    <li><a href="#"><img src="./assets/WhatsApp.png" alt="WhatsApp" srcset="" width = "35px"></a></li>
+                    <li><a href="#"><img src="./assets/facebook.png" alt="Facebook" srcset="" width = "29px"></a></li>
+                    <li><a href="#"><img src="./assets/linkedin.png" alt="linkedin" srcset="" width = "29px"></a></li>
+                    
+                </ul>
+            </div>
+            <div class="hamburger" onclick="myFunction(this)"><span>☰</span>
+                
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#proshows">Proshows</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                    <li><a href="#contact"><div class="dropdown">Contact </div> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <!-- <h1>Mahotsav'26</h1> -->
+             <img src="./assets/mahotsav_logo-removebg-preview.png" alt="Mahotsav Logo">
+            <p>The Ultimate Art Fest – Join the Flame!</p>
+            <!-- <div id="countdown" class="countdown">
+                <div class="time-unit"><span id="days">00</span><br>Days</div>
+                <div class="time-unit"><span id="hours">00</span><br>Hours</div>
+                <div class="time-unit"><span id="minutes">00</span><br>Minutes</div>
+                <div class="time-unit"><span id="seconds">00</span><br>Seconds</div>
+            </div> -->
+            <a href="#events" class="cta-btn">Explore Events</a>
+        </div>
+        <video autoplay muted loop class="hero-video">
+            <source src="./assets/fire-bg.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Mahotsav</h2>
+        <p>Mahotsav is the annual Art extravaganza of Bundelkhand Institute of Engineering and Technology Jhansi, blending fun, art, dance, drama, and innovation. Expect 10+ events, unreal performances, and many more surprises!</p>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <h2>Events & Competitions</h2>
+        <div class="events-grid">
+            <div class="event-card">
+                <h3>Paper in Vouge</h3>
+                <p>Showcase your musical talent with live performances.</p>
+                <a href="#" class="register-btn">Register</a>
+            </div>
+            <div class="event-card">
+                <h3>Dance Mania</h3>
+                <p>From classical to hip-hop – groove to the beat.</p>
+                <a href="#" class="register-btn">Register</a>
+            </div>
+            <div class="event-card">
+                <h3>Tech Quiz</h3>
+                <p>Test your wits in this high-energy quiz showdown.</p>
+                <a href="#" class="register-btn">Register</a>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+    </section>
+
+    <!-- Proshows Section -->
+    <section id="proshows" class="proshows">
+        <h2>Proshows Lineup</h2>
+        <div class="proshow-slider">
+            <div class="proshow-item">Artist 1: [Name] - Electrifying Performance</div>
+            <div class="proshow-item">Artist 2: [Name] - Unforgettable Beats</div>
+            <!-- Add slider JS for more -->
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="sponsors">
+        <h2>Our Sponsors</h2>
+        <div class="sponsor-logos">
+            <img src="./assets/sponsor1.png" alt="Sponsor 1">
+            <img src="./assets/sponsor2.png" alt="Sponsor 2">
+            <!-- Add more -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">WhatsApp</a>
+        </div>
+        <p>&copy; 2026 Mahotsav, B.I.E.T Jhansi. All rights reserved.</p>
+    </footer>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
+
